@@ -1,24 +1,22 @@
 package com.intuit.craftproject.controller;
 
-import com.intuit.craftproject.exception.AlreadyExistException;
-import com.intuit.craftproject.exception.NoSuchDriverException;
-import com.intuit.craftproject.model.Driver;
-import com.intuit.craftproject.service.IDriverService;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.Test;
+import com.intuit.craftproject.exception.AlreadyExistException;
+import com.intuit.craftproject.exception.NoSuchDriverException;
+import com.intuit.craftproject.model.Driver;
+import com.intuit.craftproject.service.IDriverService;
 
 @RunWith(MockitoJUnitRunner.class)
 public class DriverControllerTest {

@@ -13,7 +13,6 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.intuit.craftproject.exception.FileStorageException;
-import com.intuit.craftproject.exception.NoSuchDriverException;
 import com.intuit.craftproject.model.Document;
 import com.intuit.craftproject.model.DocumentType;
 import com.intuit.craftproject.model.Driver;

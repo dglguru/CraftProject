@@ -1,7 +1,5 @@
 package com.intuit.craftproject.exception;
 
-import org.springframework.web.bind.annotation.ResponseStatus;
-
 /*
  * Exception for driver does not exists into system
  */
