@@ -34,8 +34,8 @@ public class DriverController {
 
 	@PostMapping("/driver")
 	@ResponseStatus(code = HttpStatus.CREATED)
-	public Driver save( @Valid @RequestBody Driver driver) throws AlreadyExistException{
-		return driverService.Save(driver);
+	public Driver add( @Valid @RequestBody Driver driver) throws AlreadyExistException{
+		return driverService.save(driver);
 	}
 	
 	@GetMapping("/driver/{driverId}")

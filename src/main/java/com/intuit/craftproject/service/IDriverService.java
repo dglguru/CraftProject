@@ -6,7 +6,7 @@ import com.intuit.craftproject.model.Driver;
 
 public interface IDriverService {
 
-	Driver Save(Driver driver) throws AlreadyExistException; 
+	Driver save(Driver driver) throws AlreadyExistException; 
 	Driver get(long driverId) throws NoSuchDriverException;
 	Driver markActive(long driverId) throws NoSuchDriverException;
 	Driver setVerifiedFlag(long driverId) throws NoSuchDriverException;

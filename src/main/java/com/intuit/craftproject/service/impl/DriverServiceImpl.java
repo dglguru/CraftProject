@@ -18,7 +18,7 @@ public class DriverServiceImpl implements IDriverService {
 	IDriverRepository driverRepository;
 
 	@Override
-	public Driver Save(Driver driver) throws AlreadyExistException {
+	public Driver save(Driver driver) throws AlreadyExistException {
 		
 		Driver driverDb = driverRepository.findByEmail(driver.getEmail());
 		
